@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+</head>
+
+<style>
+
+    #re{
+        width: 170px;
+        height: 55px;
+        font-size: 38px;
+        color: black;
+        border-radius: 15px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        margin: auto;
+        text-align: center;
+    }
+table{
+    width: 190px;
+    height: 190px;
+    margin: auto;
+}
+
+input[type=button]{
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: red;
+}
+input[type=button]:hover{
+    background-color: rgb(238, 238, 238);
+}
+input[type=reset]{
+    margin: auto;
+}
+
+</style>
+
+
+<script lang="JavaScript">
+
+var jd=1
+var n1 = 0,n2 = 0,n3 = 0,n4 = 0,n5 = 0,n6 = 0,n7 = 0,n8 = 0,n9 = 0
+
+
+
+function limpar() {
+    document.frm.btnUm.value = "";
+    document.frm.btnDois.value = "";
+    document.frm.btnTres.value = "";
+    document.frm.btnQuatro.value = "";
+    document.frm.btnCinco.value = "";
+    document.frm.btnSeis.value = "";
+    document.frm.btnSete.value = "";
+    document.frm.btnOito.value = "";
+    document.frm.btnNove.value = "";
+    jd=1
+    n1 = 0,n2 = 0,n3 = 0,n4 = 0,n5 = 0,n6 = 0,n7 = 0,n8 = 0,n9 = 0
+}
+
+function Jogo(p){
+
+switch (p) 
+{
+    case 1:
+
+    if (n1==0) {
+        
+    if (jd%2!=0) {
+        document.frm.btnUm.value = "x";
+    }else{
+        document.frm.btnUm.value = "o";
+    }
+
+    n1 = n1 + 1
+    jd = jd + 1
+    }else{
+
+        window.alert("Este espaço está em uso, jogue em outro lugar!!!")
+
+    }
+        
+        break;
+
+    case 2:
+
+    if (n2==0) {
+        
+        if (jd%2!=0) {
+        document.frm.btnDois.value = "x";
+    }else{
+        document.frm.btnDois.value = "o";
+    }
+    
+        n2 = n2 + 1
+        jd = jd + 1
+        }else{
+    
+            window.alert("Este espaço está em uso, jogue em outro lugar!!!")
+    
+        }
+
+
+
+        break;
+
+    case 3:
+
+    if (n3==0) {
+        
+        if (jd%2!=0) {
+        document.frm.btnTres.value = "x";
+    }else{
+        document.frm.btnTres.value = "o";
+    }
+    
+        n3 = n3 + 1
+        jd = jd + 1
+        }else{
+    
+            window.alert("Este espaço está em uso, jogue em outro lugar!!!")
+    
+        }
+        
+
+    
+        break;
+
+    case 4:
+
+    if (n4==0) {
+        
+        if (jd%2!=0) {
+        document.frm.btnQuatro.value = "x";
+    }else{
+        document.frm.btnQuatro.value = "o";
+    }
+    
+        n4 = n4 + 1
+        jd = jd + 1
+        }else{
+    
+            window.alert("Este espaço está em uso, jogue em outro lugar!!!")
+    
+        }
+        
+
+    
+        break;
+
+    case 5:
+
+    if (n5==0) {
+        
+        if (jd%2!=0) {
+        document.frm.btnCinco.value = "x";
+    }else{
+        document.frm.btnCinco.value = "o";
+    }
+    
+        n5 = n5 + 1
+        jd = jd + 1
+        }else{
+    
+            window.alert("Este espaço está em uso, jogue em outro lugar!!!")
+    
+        }
+        
+    
+    
+        break;
+
+    case 6:
+
+    if (n6==0) {
+        
+        if (jd%2!=0) {
+        document.frm.btnSeis.value = "x";
+         }else{
+        document.frm.btnSeis.value = "o";
+        } 
+    
+        n6 = n6 + 1
+        jd = jd + 1
+        }else{
+    
+            window.alert("Este espaço está em uso, jogue em outro lugar!!!")
+    
+        }
+        
+    
+        break;
+
+    case 7:
+
+    if (n7==0) {
+        
+        if (jd%2!=0) {
+        document.frm.btnSete.value = "x";
+    }else{
+        document.frm.btnSete.value = "o";
+    }
+    
+    
+        n7 = n7 + 1
+        jd = jd + 1
+        }else{
+    
+            window.alert("Este espaço está em uso, jogue em outro lugar!!!")
+    
+        }
+        
+    
+        break;
+
+    case 8:
+
+    if (n8==0) {
+        
+        if (jd%2!=0) {
+        document.frm.btnOito.value = "x";
+    }else{
+        document.frm.btnOito.value = "o";
+    }
+    
+        n8 = n8 + 1
+        jd = jd + 1
+        }else{
+    
+            window.alert("Este espaço está em uso, jogue em outro lugar!!!")
+    
+        }
+        
+    
+    
+        break;
+
+    case 9:
+
+    if (n9==0) {
+        
+        if (jd%2!=0) {
+        document.frm.btnNove.value = "x";
+    }else{
+        document.frm.btnNove.value = "o";
+    }
+    
+        n9 = n9 + 1
+        jd = jd + 1
+        }else{
+    
+            window.alert("Este espaço está em uso, jogue em outro lugar!!!")
+    
+        }
+        
+    
+    
+        break;
+
+}
+
+//jd = jd + 1
+
+}
+
+</script>
+<body>
+    <h1>Jogo da Velha</h1>
+
+<form name="frm">
+    <table>
+        <tr>
+            <td><input type="button" name="btnUm" value="" Onclick="Jogo(1)"></td>
+            <td><input type="button" name="btnDois" value="" Onclick="Jogo(2)"></td>
+            <td><input type="button" name="btnTres" value="" Onclick="Jogo(3)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="btnQuatro" value="" Onclick="Jogo(4)"></td>
+            <td><input type="button" name="btnCinco" value="" Onclick="Jogo(5)"></td>
+            <td><input type="button" name="btnSeis" value="" Onclick="Jogo(6)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="btnSete" value="" Onclick="Jogo(7)"></td>
+            <td><input type="button" name="btnOito" value="" Onclick="Jogo(8)"></td>
+            <td><input type="button" name="btnNove" value="" Onclick="Jogo(9)"></td>
+        </tr>
+    </table>
+    <input type="button" name="limpa" value="Reiniciar" id="re" Onclick="limpar()">
+    
+</form> 
+    
+</body>
+</html>
